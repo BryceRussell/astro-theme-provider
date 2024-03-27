@@ -6,16 +6,21 @@
 		"node": ">=18.19.0"
 	},
 	"scripts": {
+		"package:dev": "pnpm --filter astro-theme-provider dev",
+		"package:build": "pnpm --filter astro-theme-provider build",
 		"playground:dev": "pnpm --filter playground dev",
+		"playground:build": "pnpm --filter playground build",
 		"docs:dev": "pnpm --filter docs dev",
+		"docs:build": "pnpm --filter docs build",
+		"test": "node --test",
 		"changeset": "changeset",
 		"lint": "biome check .",
 		"lint:fix": "biome check --apply ."
 	},
 	"license": "MIT",
 	"devDependencies": {
-		"@biomejs/biome": "^1.6.1",
+		"@biomejs/biome": "^1.6.3",
 		"@changesets/cli": "^2.27.1",
-		"astro": "^4.5.6"
+		"astro": "^4.5.10"
 	}
 }
